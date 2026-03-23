@@ -4,11 +4,844 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
-   <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            height: 3000px;
+            width: 5000px;
+            background-color: color-mix(in srgb, whitesmoke 75%, white);
+        }
+            .title {
+      border: 3px solid black;
+      margin-right: 370px;
+      margin-left: 110px;
+      width: 1150px;
+      background-color: #2b2945;
+      color: silver;
+      position: absolute;
+      top: 27px;
+      height: 30px;
+    }
+
+    .search {
+      font-size: 17px;
+      border-radius: 4px;
+      color: silver;
+      background-color: white;
+      margin-left: 450px;
+      width: 300px;
+      position: absolute;
+      top: 10px;
+      height: 40px;
+    }
+
+    .button {
+      border-radius: 5px;
+      font-size: 15px;
+      background-color: white;
+      width: 100px;
+      height: 35px;
+      margin-left: 850px;
+      position: absolute;
+      top: 10px;
+      text-align: center;
+    }
+
+    .circle {
+      background-color: #00797c;
+      color: #fff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 75px;
+      position: absolute;
+      top: 2px;
+    }
+
+    .heart-button {
+      border-radius: 5px;
+      background-color: white;
+      width: 50px;
+      margin-left: 960px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+    }
+
+    .Man-button {
+      border-radius: 5px;
+      background-color: white;
+      width: 50px;
+      margin-left: 1020px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+    }
+
+    .Menu {
+      border-radius: 1px;
+      background-color: white;
+      margin-left: 110px;
+      margin-right: 20px;
+      position: absolute;
+      top: 135px;
+      width: 1155px;
+      height: 3300px;
+
+    }
+
+    .Cetegories {
+      border: 1px solid silver;
+      height: 50px;
+      width: 150px;
+      margin-left: 168px;
+      border-radius: 7px;
+
+    }
+
+    .navbar {
+      font-size: 17px;
+      display: flex;
+      margin-left: 400px;
+      gap: 40px;
+      position: absolute;
+      top: 30px;
+    }
+    .header {
+      -webkit-border-bottom-right-radius: 27px;
+      -webkit-border-bottom-left-radius: 27px;
+      -moz-border-radius-bottomright: 27px;
+      -moz-border-radius-bottomleft: 27px;
+      border-bottom-right-radius: 27px;
+      border-bottom-left-radius: 27px;
+      background-color: #F0F2F3;
+      width: 970px;
+      height: 600px;
+      margin-left: 100px;
+      position: absolute;
+      top: 80px
+    }
+
+    .Left-arrow {
+      color: #007580;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 35px;
+      position: absolute;
+      top: 230px;
+    }
+
+    .shop-button {
+      background-color: #029FAE;
+      width: 171px;
+      height: 52px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-align: center;
+      /* left-right center */
+      line-height: 60px;
+      position: absolute;
+      top: 340px;
+      margin-left: 100px;
+    }
+
+    .half-circle {
+      background-color: #E1E3E5;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+      top: -20px;
+      margin-left: 650px;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      margin-left: 600px;
+    }
+
+    .right-arrow {
+      color: #007580;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 915px;
+      position: absolute;
+      top: 230px;
+    }
+
+    .feature {
+      width: 720px;
+      height: 100px;
+      border-radius: 10px;
+      background-color: #fff;
+      position: absolute;
+      top: 545px;
+      margin-left: 130px;
+    }
+
+    .Info {
+      display: flex;
+      gap: 90px;
+      font-size: 14px;
+      margin-left: 20px;
+      color: #272343;
+    }
+
+    .Typography {
+      color: #9A9CAA;
+      gap: 60px;
+      font-size: 10px;
+      margin-left: 20px;
+      display: flex;
+      position: absolute;
+      top: 50px;
+    }
+
+    .logo {
+      display: flex;
+      margin-left: -600px;
+    }
+
+    .L-arrow {
+      background-color: #007580;
+      color: #fff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 905px;
+      position: absolute;
+      top: 810px;
+    }
+
+    .R-arrow {
+      background-color: #F0F2F3;
+      color: #272343;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 940px;
+      position: absolute;
+      top: 810px;
+    }
+    .Card{
+      border-radius: 6px;
+      height: 23px;
+      width: 30px;
+      background-color: #029FAE;
+      position: absolute;
+      top: 1040px;
+      margin-left: 360px;
+      text-align: center;
+    }
+    .Card-2{
+        border-radius: 10px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 1040px;
+      margin-left: 550px;
+      text-align: center;
+      background-color: #F0F2F3;
+    }
+    .product-status{
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    color:#FFFFFF;
+    background-color: #01AD5A;
+    text-align: center;
+    position: absolute;
+    top: 870px;
+    margin-left: 240px
+    }.heart{
+      background-color: white;
+      width: 30px;
+      margin-left: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 870px;
+    }
+    .Sales{
+      background-color: #F5813F;
+      border-radius: 4px;
+      position: absolute;
+      top: 870px;
+      text-align: center;
+      width: 40px;
+      height: 20px;
+      margin-left: 425px;
+      color: #FFFFFF;
+    }
+  .Wind-chair{
+    width: 300px;
+    height: 50px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+     -moz-border-radius-bottomright: 10px;
+     -moz-border-radius-bottomleft: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     background-color: #000000B2;
+     position: absolute;
+     top: 1420px;
+     margin-left: 320px;
+  }
+  .Wooden-chair{
+    width: 300px;
+    height: 50px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+     -moz-border-radius-bottomright: 10px;
+     -moz-border-radius-bottomleft: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     background-color: #000000B2;
+     position: absolute;
+     top: 1420px;
+     margin-left: 640px;
+  }
+  .park-bench{
+       width: 195px;
+    height: 50px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+     -moz-border-radius-bottomright: 10px;
+     -moz-border-radius-bottomleft: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     background-color: #000000B2;
+     position: absolute;
+     top: 1420px;
+     margin-left: 960px;
+  }
+  .leftArrow{
+          background-color: #007580;
+      color: #fff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 905px;
+      position: absolute;
+      top: 1120px;
+  }
+  .rightArrow{
+          background-color: #F0F2F3;
+      color: #272343;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 940px;
+      position: absolute;
+      top: 1120px;
+  }
+  .Tab{
+    gap: 18px;
+    display: flex;
+    position: absolute;
+    top: 1550px;
+    margin-left: 350px;
+  }
+   .Card-3{
+         width: 30px;
+         height: 20px;
+      background-color: #029FAE;
+      position: absolute;
+      top: 1780px;
+      margin-left: 260px;
+      text-align: center;
+      border-radius: 10px;
+  }
+  .Card-4{
+      border-radius: 10px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 1780px;
+      margin-left: 450px;
+      text-align: center;
+      background-color: #F0F2F3;
+  }
+  .New{
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    color:#FFFFFF;
+    background-color: #01AD5A;
+    text-align: center;
+    position: absolute;
+    top: 1610px;
+    margin-left: 140px
+  }
+  .button-Heart{
+      background-color: white;
+      width: 30px;
+      margin-left: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 1610px;
+  }
+  .Sales-button{
+          background-color: #F5813F;
+      border-radius: 4px;
+      position: absolute;
+      top: 1610px;
+      text-align: center;
+      width: 40px;
+      height: 20px;
+      margin-left: 325px;
+      color: #FFFFFF;
+  }
+  .Card-5{
+          border-radius: 10px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2040px;
+      margin-left: 260px;
+      text-align: center;
+      background-color: #F0F2F3;
+  }
+  .Card-6{
+             border-radius: 10px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2175px;
+      margin-left: 560px;
+      text-align: center;
+      background-color: #F0F2F3;
+  }
+  .Testimonial{
+    height: 400px;
+    background-color: #F0F2F3;
+    height: 350px;
+    width: 1155px;
+    position: absolute;
+    top: 2250px;
+    margin-left: 110px;
+  }
+  .Testimonial-Card-1{
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 470px;
+    border-radius: 12px;
+    margin-left: 90px;
+    position: absolute;
+    top: 110px;
+  }
+  .Testimonial-Card-2{
+      background-color: #FFFFFF;
+    height: 200px;
+    width: 470px;
+    border-radius: 12px;
+    margin-left: 575px;
+    position: absolute;
+    top: 110px;
+  }
+  .L-A{  /* left Arrow*/
+    background-color: #007580;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      margin-left: 990px;
+  }
+  .R-A{ /* right Arrow*/
+   background-color: #F0F2F3;
+    color: #272343;
+    border-radius: 50%;
+    width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      margin-left: 1020px;
+  }
+  .Card-7{
+    background-color: #029FAE;
+          border-radius: 8px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2920px;
+      margin-left: 380px;
+      text-align: center;
+  }
+  .Card-8{
+        background-color: #F0F2F3;
+          border-radius: 8px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2920px;
+      margin-left: 590px;
+      text-align: center;
+  }
+  .Card-9{
+            background-color: #F0F2F3;
+          border-radius: 8px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2920px;
+      margin-left: 790px;
+      text-align: center;
+  }
+  .Card-10{
+                background-color: #F0F2F3;
+          border-radius: 8px;
+      height: 23px;
+      width: 30px;
+      position: absolute;
+      top: 2920px;
+      margin-left: 1000px;
+      text-align: center;
+  }
+  .New-button{
+     width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    color:#FFFFFF;
+    background-color: #01AD5A;
+    text-align: center;
+    position: absolute;
+    top: 2730px;
+    margin-left: 240px
+  }
+  .heart-B{
+       background-color: white;
+      width: 30px;
+      margin-left: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 2730px;
+  }
+  .Sales-B{
+        background-color: #F5813F;
+      border-radius: 4px;
+      position: absolute;
+      top: 2730px;
+      text-align: center;
+      width: 40px;
+      height: 20px;
+      margin-left: 445px;
+      color: #FFFFFF;
+  }
+  .Left-A{
+      background-color: #007580;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 2672px;
+      margin-left: 1000px;
+  }
+  .Right-A{
+      background-color: #F0F2F3;
+    color: #272343;
+    border-radius: 50%;
+    width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 2672px;
+      margin-left: 1030px;
+  }
+  .loarm-ipsem{
+        color: #272343;
+    position: absolute;
+    top: 3150px;
+    margin-left: 190px;
+    font-size: 16px;
+    opacity: 60%;
+    line-height: 24px;
+  }
+  .Frame-1{
+      color: #9A9CAA;
+  display: flex;
+  gap: 110px;
+  font-size: 14px;
+  margin-left: 600px;
+  position: absolute;
+  top: 3110px;
+  }
+  .Email{
+      color: #9A9CAA;
+  border-radius: 8px;
+  font-size: 16px;
+border: 1px solid #E1E3E5;
+width: 180px;
+height: 46px;
+margin-left: 930px;
+position: absolute;
+top: 3130px;
+  }
+  
+    .title-A {
+      border: 3px solid black;
+      margin-right: 370px;
+      margin-left: 165px;
+      width: 1490px;
+      background-color: #2b2945;
+      color: silver;
+      position: absolute;
+      top: 27px;
+      height: 30px;
+    }
+
+    .search-A {
+      font-size: 17px;
+      border-radius: 4px;
+      color: silver;
+      background-color: white;
+      margin-left: 450px;
+      width: 300px;
+      position: absolute;
+      top: 10px;
+      height: 40px;
+    }
+
+    .button-A {
+      border-radius: 5px;
+      font-size: 15px;
+      background-color: white;
+      width: 100px;
+      height: 35px;
+      margin-left: 850px;
+      position: absolute;
+      top: 10px;
+      text-align: center;
+    }
+
+    .circle-A {
+      background-color: #00797c;
+      color: #fff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 75px;
+      position: absolute;
+      top: 2px;
+    }
+
+    .heart-button-A {
+      border-radius: 5px;
+      background-color: white;
+      width: 50px;
+      margin-left: 960px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+    }
+
+    .Man-button-A {
+      border-radius: 5px;
+      background-color: white;
+      width: 50px;
+      margin-left: 1020px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+    }
+
+    .Menu-A {
+      border-radius: 1px;
+      background-color: beige;
+      margin-left: 165px;
+      margin-right: 20px;
+      position: absolute;
+      top: 135px;
+      width: 1490px;
+      height: 80px;
+
+    }
+
+    .Cetegories-A {
+      border: 1px solid silver;
+      height: 50px;
+      width: 150px;
+      margin-left: 148px;
+      border-radius: 7px;
+
+    }
+
+    .navbar-A {
+      font-size: 17px;
+      display: flex;
+      margin-left: 340px;
+      gap: 40px;
+      position: absolute;
+      top: 30px;
+    }
+
+    .Full-page {
+      background-color: white;
+      width: 1500px;
+      position: absolute;
+      top: 215px;
+      margin-left: 165px;
+      height: 1000px;
+    }
+
+    .login {
+      background-color: whitesmoke;
+      display: flex;
+      font-size: 17px;
+      margin-left: 100px;
+      -webkit-border-bottom-right-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -moz-border-radius-bottomright: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 1200px;
+      position: absolute;
+      top: 1px;
+      height: 130px;
+    }
+
+    .Login-page {
+      border-radius: 10px;
+      background-color: white;
+      position: absolute;
+      top: 200px;
+      width: 668px;
+      margin-left: 300px;
+      height: 440px;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    .Email-A {
+      border-radius: 5px;
+      background-color: whitesmoke;
+      width: 584px;
+      margin-left: 40px;
+      height: 50px;
+    }
+
+    .Password {
+      border-radius: 5px;
+      background-color: whitesmoke;
+      width: 584px;
+      margin-left: 40px;
+      height: 50px;
+    }
+
+    .Remember {
+      border: 1.5px solid silver;
+      border-radius: 4px;
+      width: 20px;
+      height: 20px;
+      margin-left: 40px;
+      position: absolute;
+      top: 295px;
+    }
+    button{
+      width: 584px;
+      height: 52px;
+      border-radius: 8px;
+      background-color: #029FAE;
+      color: white;
+      border: 1px solid #029FAE;
+    }
+   .data{
+    color: #272343;
+    position: absolute;
+    top: 790px;
+    margin-left: 90px;
+    font-size: 16px;
+    opacity: 60%;
+    line-height: 24px;
+   }
+ .Text{
+  color: #9A9CAA;
+  display: flex;
+  gap: 180px;
+  font-size: 14px;
+  margin-left: 600px;
+  position: absolute;
+  top: 730px;
+ }
+ .Your-Email{
+  color: #9A9CAA;
+  border-radius: 8px;
+  font-size: 16px;
+border: 1px solid #E1E3E5;
+width: 285px;
+height: 46px;
+margin-left: 1000px;
+position: absolute;
+top: 770px;
+ }
+    </style>
 </head>
 <body>
-   <section style="position: absolute;top: 100px;margin-left: 700px;">
-       <h6 style="color: silver;">Homepage</h6>
+   <section>
+  <pre>                 <h7 style="color: silver;">Homepage</h7>
 
 <span class="title">                      ✔ Free shopping On all order over$50                                                                Eng ▼  Faqs  ? Need Help</span>
               
@@ -48,7 +881,7 @@
 <h1 style="font-size: 50px; margin-left: 100px;position: absolute;top: 123px;">Best Furniture
 Collection for your
 interior.</h1>
-<img src="/files/cdc7113b68039af7d7222a3d15eae2a39d068924 (3).png" class="half-circle">
+<img src="picture/cdc7113b68039af7d7222a3d15eae2a39d068924 (3).png" class="half-circle">
 <div class="Left-arrow">←</div>
 <div class="right-arrow">→</div>
 <div class="shop-button">Shop Now  →</div>
@@ -66,27 +899,22 @@ interior.</h1>
   <span href="#">100% Secure Payment Method</span>
   </nav>
   <nav class="logo">
-    <img src="/files/e0035d056ad3c88d4b1a3fd03dfcde28119a604f.png"
+    <img src="picture/e0035d056ad3c88d4b1a3fd03dfcde28119a604f.png"
      style="width: 35px;
      height: 37px;
      position: absolute;
      top: 100px;">
-    <img src="/files/ad054e766ecba134b5274ba3fd49187dd5fe9cc8.png"
+    <img src="picture/ad054e766ecba134b5274ba3fd49187dd5fe9cc8.png"
      style="width: 37px;
      height: 39px;
      margin-left: 700px;
      position: absolute;
      top: 100px;">">
-    <img src="/files/16daf3088b9c3b477d787fd38a8b0505754f70ba.png"
-        style="width: 65px;height: 69px;margin-left: 800px;position: absolute;top: 85px;">
-     <img src="/files/95afe41b6a234b7ab7899f5ce91b9737a351e249.png" 
-         style="width: 65px;height: 69px;margin-left: 910px;position: absolute;top: 85px;">
-      <img src="/files/427e6a38b9f21cabf9f278b8d278b378ad645ab1.png" 
-          style="width: 65px;height: 69px;margin-left: 1015px;position: absolute;top: 85px;">
-      <img src="/files/e93de3d5c4ca4b2a87029abf68283a355c0d4a6c.png" 
-          style="width: 65px;height: 69px;margin-left: 1130px;position: absolute;top: 85px;">
-      <img src="/files/42ee325c8d4f3f8e36f3ac85a6e5dd1187b451a2.png" 
-          style="width: 65px;height: 69px;margin-left: 1250px;position: absolute;top: 85px;">
+    <img src="picture/16daf3088b9c3b477d787fd38a8b0505754f70ba.png" style="width: 65px;height: 69px;margin-left: 800px;position: absolute;top: 85px;">
+     <img src="picture/95afe41b6a234b7ab7899f5ce91b9737a351e249.png" style="width: 65px;height: 69px;margin-left: 910px;position: absolute;top: 85px;">
+      <img src="picture/427e6a38b9f21cabf9f278b8d278b378ad645ab1.png" style="width: 65px;height: 69px;margin-left: 1015px;position: absolute;top: 85px;">
+      <img src="picture/e93de3d5c4ca4b2a87029abf68283a355c0d4a6c.png" style="width: 65px;height: 69px;margin-left: 1130px;position: absolute;top: 85px;">
+      <img src="picture/42ee325c8d4f3f8e36f3ac85a6e5dd1187b451a2.png" style="width: 65px;height: 69px;margin-left: 1250px;position: absolute;top: 85px;">
   </nav>
 </div>
 </div>
@@ -94,29 +922,26 @@ interior.</h1>
 <div class="L-arrow">←</div>
 <div class="R-arrow">→</div>
 <nav>
-<img src="/files/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
+<img src="picture/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
        style="width: 170px;
       height: 170px;
       position: absolute;
       top: 860px;
       border-radius: 6px;
       margin-left: 230px;">
-<img src="/files/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"
-    style="width: 170px;
+<img src="picture/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"  style="width: 170px;
       height: 170px;
       position: absolute;
       top: 860px;
       border-radius: 10px;
       margin-left: 415px;">
-<img src="/files/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg"
-    style="width: 170px;
+<img src="picture/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg" style="width: 170px;
       height: 170px;
       position: absolute;
       top: 860px;
       border-radius: 10px;
       margin-left: 600px;">      
-<img src="/files/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg"
-    style="width: 170px;
+<img src="picture/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg" style="width: 170px;
       height: 170px;
       position: absolute;
       top: 860px;
@@ -142,8 +967,8 @@ interior.</h1>
 <div class="leftArrow">←</div>
 <div class="rightArrow">→</div>
 <nav>
-<img src="/files/a4802af631ee4e02a8c754e8f5a375a73f9e93f0.jpg"
-    style="height: 300px;
+<img src="picture/a4802af631ee4e02a8c754e8f5a375a73f9e93f0.jpg"
+ style="height: 300px;
      width: 300px;
      margin-left: 0px;
      scale: crop;
@@ -155,8 +980,8 @@ interior.</h1>
      -moz-border-radius-bottomright: 14px;
       border-top-right-radius: 14px;
       border-bottom-right-radius: 14px;">
-<img src="/files/16fe2c5029cda46ce552fa79c00b7d3b3cd99a51.jpg"
-    style="height: 300px;
+<img src="picture/16fe2c5029cda46ce552fa79c00b7d3b3cd99a51.jpg" 
+style="height: 300px;
      width: 300px;
      margin-left: 320px;
      scale: crop;
@@ -167,8 +992,8 @@ interior.</h1>
         <p style="color: #FFFFFF;font-size: 13px;margin-left: 20px;position: absolute;top: 2px;">Wing Chair</p>
         <p style="color: gray;font-size: 10px; margin-left: 20px;position: absolute;top: 23px;">3,584 Products</p>
       </div>
-<img src="/files/5133553384342faf113634d1989cad50b7dd5580.png"
-    style="height: 300px;
+<img src="picture/5133553384342faf113634d1989cad50b7dd5580.png" 
+style="height: 300px;
      width: 300px;
      margin-left: 640px;
      scale: crop;
@@ -179,8 +1004,8 @@ interior.</h1>
         <p style="color: #FFFFFF;font-size: 13px;margin-left: 20px;position: absolute;top: 2px;">Wooden Chair</p>
         <p style="color: gray;font-size: 10px; margin-left: 20px;position: absolute;top: 23px;">157 Products</p>        
       </div>
-<img src="/files/60de06c899fa0cc171fbe75fe37a99eddcba594e.jpg" 
-    style="height: 300px;
+<img src="picture/60de06c899fa0cc171fbe75fe37a99eddcba594e.jpg" 
+style="height: 300px;
      width: 195px;
      margin-left: 960px;
      scale: crop;
@@ -206,29 +1031,29 @@ interior.</h1>
 <p href="#" style="color: #9A9CAA;">Featured</p>
 </nav>
 <nav>
-<img src="/files/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
+<img src="picture/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
        style="width: 170px;
       height: 170px;
       position: absolute;
       top: 1600px;
       border-radius: 6px;
       margin-left: 130px;">
- <img src="/files/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"
-     style="width: 170px;
+ <img src="picture/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"
+   style="width: 170px;
       height: 170px;
       position: absolute;
       top: 1600px;
       border-radius: 10px;
       margin-left: 307px;">
- <img src="/files/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg" 
-     style="width: 170px;
+ <img src="picture/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg"
+  style="width: 170px;
       height: 170px;
       position: absolute;
       top: 1600px;
       border-radius: 10px;
       margin-left: 490px;">      
-<img src="/files/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg" 
-    style="width: 170px;
+<img src="picture/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg" 
+style="width: 170px;
       height: 170px;
       position: absolute;
       top: 1600px;
@@ -264,7 +1089,7 @@ color: #9A9CAA;
 <div class="button-Heart">❤️</div>
 <div class="Sales-button">Sales</div>
 <nav>
-<img src="/files/64cefe53d4cbc3805c414ce9f76aa8bdd2a3cc8d.jpg"
+<img src="picture/64cefe53d4cbc3805c414ce9f76aa8bdd2a3cc8d.jpg"
    style="height: 180px;
    width: 170px;
    position: absolute;
@@ -272,7 +1097,7 @@ color: #9A9CAA;
    margin-left: 130px;
    border-radius: 10px;">
 
-<img src="/files/a50784793410e47eab61c559fa971045f11bb3a9.jpg"
+<img src="picture/a50784793410e47eab61c559fa971045f11bb3a9.jpg"
    style="height: 180px;
    width: 170px;
    position: absolute;
@@ -280,14 +1105,14 @@ color: #9A9CAA;
    margin-left: 315px;
    border-radius: 10px;">
 
-<img src="/files/8b88947a31903acf7eec7cd336119f1ea0b4587b.jpg"
+<img src="picture/8b88947a31903acf7eec7cd336119f1ea0b4587b.jpg"
    style="height: 180px;
    width: 170px;
    position: absolute;
    top: 1850px;
    margin-left: 500px;
    border-radius: 10px;">
-<img src="/files/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
+<img src="picture/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
    style="height: 180px;
    width: 170px;
    position: absolute;
@@ -322,8 +1147,8 @@ color: #9A9CAA;
   </p>
      <hr style="margin-top: 900px;width: 1155px;margin-left: -90px;">
 
-  <img src="/files/ed1cc80b6c95f55d53f843caf4439599d3582836.png"
-      style="height: 40px;
+  <img src="picture/ed1cc80b6c95f55d53f843caf4439599d3582836.png" 
+  style="height: 40px;
   width: 40px;
   border-radius: 50%;
   position: absolute;
@@ -350,8 +1175,8 @@ color: #9A9CAA;
     Quis Tincidunt Lacus Aliquam Et. Duis Nulla Velit, 
     Dignissim Ut Odio Ac, Eleifend Luctus Leo. Ut Ac
     Imperdiet Velit. Aliquam Semper Ex In Volutpat Rutrum.</p>
-    <img src="/files/ed85c1bfc92ef925a398d16787cdb6fe029f0218.png" 
-        style="height: 40px;
+    <img src="picture/ed85c1bfc92ef925a398d16787cdb6fe029f0218.png" 
+    style="height: 40px;
   width: 40px;
   border-radius: 50%;
   position: absolute;
@@ -372,28 +1197,28 @@ color: #9A9CAA;
 <p style="font-size: 20px;
 color: #272343;position: absolute;top: 2650px;margin-left: 250px;">Recently Added</p>
 <nav>
-<img src="/files/b120dd35afa230d9c7854e8904bff707a459d920.jpg" 
+<img src="picture/b120dd35afa230d9c7854e8904bff707a459d920.jpg"
   style="width: 190px;
   height: 190px;
   position: absolute;
   top: 2720px;
   margin-left: 230px;
   border-radius: 7px;">
-<img src="/files/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"
+<img src="picture/096d6bf5080dc137a17c6a407cb7a13d1dcbf2a4.jpg"
   style="width: 190px;
   height: 190px;
   position: absolute;
   top: 2720px;
   margin-left: 435px;
   border-radius: 7px;">
-<img src="/files/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg"
+<img src="picture/e2223ac49ef838bf1b2e6eb27237306ca911c590.jpg"
   style="width: 190px;
   height: 190px;
   position: absolute;
   top: 2720px;
   margin-left: 640px;
   border-radius: 7px;">
-<img src="/files/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg"
+<img src="picture/8ae829fe06cfc69d45f5c9a48462543f1816e9a3.jpg"
 style="width: 190px;
   height: 190px;
   position: absolute;
@@ -614,6 +1439,7 @@ Park Bench
    
    <p style="color: silver; font-size: 14px; position: absolute;top: 910px; margin-left: 180px;">@ 2021 - Blogy - Designed & Develop by</p><p style="position: absolute; top: 912px; margin-left: 479px;">Zakirsoft</p>
  <hr>
+</pre>
   </section>  
 </body>
 </html>
